@@ -12,7 +12,8 @@ describe 'Translate Indoarabic Numbers to Roman Numerals' do
   {
     1 => "I",
     5 => "V",
-    2 => "II"
+    2 => "II",
+    4 => "IV"
   }.each do |a,r|
     it "converts #{a} to #{r}" do
       expect(convert(a)).to eq(r)

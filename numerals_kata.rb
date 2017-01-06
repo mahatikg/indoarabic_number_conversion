@@ -18,14 +18,14 @@
 #   "II"
 # end
 
+DICTIONARY = [[5, 'V'], [4, 'IV'], [1, 'I']]
+
+def conversion_dictionary(indoarabic)
+    DICTIONARY.find {|arabic_num, _| arabic_num <= indoarabic}
+end
 
 def convert(indoarabic)
   return "" if indoarabic.zero?
-  return "V" if indoarabic == 5
-
-  arabic_num, roman_num =
-  [[5, 'V'],[1, 'I']].find {|arabic_num, _| arabic_num <= indoarabic}
-
+  arabic_num, roman_num = conversion_dictionary(indoarabic)
   roman_num + convert(indoarabic - arabic_num)
-  # because 2 is actualy 1 + 1
 end
