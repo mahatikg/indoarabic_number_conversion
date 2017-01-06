@@ -6,7 +6,13 @@
 
 
 #To pass the first two tests
+# def convert(indoarabic)
+#   return "" if indoarabic.zero?
+#   "I"
+# end
+
 def convert(indoarabic)
   return "" if indoarabic.zero?
-  "I"
+  return "I" if indoarabic == 1
+  'V'
 end
