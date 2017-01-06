@@ -14,8 +14,8 @@
 # - test for bad values
 #
 # Non-Base Tests:
-# - 2 to 'II'
-# - 4 to 'IV'
+# - 2 to 'II' (its actually TWO 'I')
+# - 4 to 'IV' (Its actually a one and a five)
 # - 9 to 'IX'
 # - 8 to 'XIII'
 # - all other pre and post- positioned numbers that occur in Roman numerals and how to deal with them
