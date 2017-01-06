@@ -10,10 +10,22 @@
 #   return "" if indoarabic.zero?
 #   "I"
 # end
+#
+# def convert(indoarabic)
+#   return "" if indoarabic.zero?
+#   return "I" if indoarabic == 1
+#   return "V" if indoarabic == 5
+#   "II"
+# end
+
 
 def convert(indoarabic)
   return "" if indoarabic.zero?
-  return "I" if indoarabic == 1
   return "V" if indoarabic == 5
-  "II"
+
+  arabic_num, roman_num =
+  [[5, 'V'],[1, 'I']].find {|arabic_num, _| arabic_num <= indoarabic}
+
+  roman_num + convert(indoarabic - arabic_num)
+  # because 2 is actualy 1 + 1
 end
