@@ -23,7 +23,8 @@ describe 'Translate Indoarabic Numbers to Roman Numerals' do
     400 => 'CD',
     500 => 'D',
     900 => 'CM',
-    1000 => 'M'
+    1000 => 'M',
+    2973 => 'MMCMLXXIII'
 
 }
 
