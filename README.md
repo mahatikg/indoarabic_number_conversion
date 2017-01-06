@@ -2,17 +2,17 @@
 
 Dear Pillar,
 
-I had a ton of fun parsing through the layers of testing for this kata! 
-To run this fill simply clone the repo and then run `rspec spec` in your terminal to see an output of all the passing tests. 
+I had a ton of fun parsing through the layers of testing for this kata! I coded in Ruby and may take some time later this weekend to try out the kata again in Python and perhaps javascript.
+To run this simply clone the repo and then run `rspec spec` in your terminal to see an output of all the passing tests. 
 
 Solution
 Roman numerals are rather illogical to the modern mind. While numbers such as 'I' and 'X' make sense, 
 the roman numeral notation is filled with problematic pitfalls for numbers such as 'IV' and 'IX'. A lot of this problematic syntax is due 
-to Roman Numerals not using a base ten system. 
+to Roman Numerals not using a base ten system. Before I began coding or even writing tests, I listed all the 'base' and 'non-base' roman numerals to test for in the design_spec.rb. It was from this outline that I began writing my tests. 
 
-Therefore the most logical solution to this problem is to create a lexical dictionary. The dictionary must include all the 
-"natural" roman numerals such as I, V, X, L, C, D, & M as well as all the illogical non-base numerals such as IV, IX, XL, ec. 
-For code to interact with this dictionary, it is most logical to create this dictionary in an array.
+The most logical solution to this problem is to create a lexical dictionary that serves as a reference point for number parsing. The dictionary must include all the "natural" roman numerals such as I, V, X, L, C, D, & M as well as all the illogical non-base numerals such as IV, IX, XL, etc. 
+
+Since the executable code must have access to the entirety of this dictionary to check the input-number against, it is most logical to create this dictionary in an array.
 Then the executable code utilizes the array dictionary by looping through the dictionary to asses if:
 - the input number to be converted is higher than the numeral being tested again,
 - if the input number is higher, the code adds the numeral to the output string. 
