@@ -14,5 +14,6 @@
 def convert(indoarabic)
   return "" if indoarabic.zero?
   return "I" if indoarabic == 1
-  'V'
+  return "V" if indoarabic == 5
+  "II"
 end
