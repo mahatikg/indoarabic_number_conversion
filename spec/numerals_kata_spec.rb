@@ -9,13 +9,11 @@ describe 'Translate Indoarabic Numbers to Roman Numerals' do
     end
   end
 
-  #first constant
-  it 'converts 1 to I' do
-    expect(convert(1)).to eq('I')
-  end
-
-  #second constant 5
-  it 'converts 1 to I' do
-    expect(convert(5)).to eq('V')
+  {
+    1 => "I",
+    5 => "V" }.each do |a,r|
+    it "converts #{a} to #{r}" do
+      expect(convert(a)).to eq(r)
+    end
   end
 end
