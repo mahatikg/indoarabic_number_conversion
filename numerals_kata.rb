@@ -19,7 +19,7 @@ def conversion_dictionary(indoarabic)
 end
 
 def convert(indoarabic)
-  return Romans couldn't comprehend 0" if indoarabic.zero?
+  return "" if indoarabic.zero?
   arabic_num, roman_num = conversion_dictionary(indoarabic)
   roman_num + convert(indoarabic - arabic_num)
 end
