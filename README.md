@@ -18,8 +18,8 @@ Since the executable code must have access to the entirety of this dictionary to
 Then, the executable code subtracts the value of the numeral from the original input which then loops through process.
 This results in every 'digit' in the input number being parsed correctly into Roman Numerals. 
 
-A far more detailed "for beginers" explanation of how this problem was solved and also testing practices in ruby can be found 
-[here](https://medium.com/@mahatimeerunilaya/aristotle-quality-is-not-an-act-it-is-a-habit-part-i-dc7ebf5cd276#.m9c6nusnp) and [here] (https://medium.com/@mahatimeerunilaya). 
+A far more detailed "for beginers" explanation of how this problem was solved can be found [here] (https://medium.com/@mahatimeerunilaya/roman-numerals-kata-a53725e05996#.z6hlvls8c)
+[here](https://medium.com/@mahatimeerunilaya/aristotle-quality-is-not-an-act-it-is-a-habit-part-i-dc7ebf5cd276#.m9c6nusnp). 
 
 
 
