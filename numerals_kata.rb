@@ -15,7 +15,7 @@ DICTIONARY = [
 ]
 
 def conversion_dictionary(indoarabic)
-    DICTIONARY.find {|arabic_num, _| arabic_num <= indoarabic}
+    DICTIONARY.find {|arabic_num, v| arabic_num <= indoarabic}
 end
 
 def convert(indoarabic)
