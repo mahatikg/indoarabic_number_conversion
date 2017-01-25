@@ -1,7 +1,4 @@
 ##README
-
-Dear Pillar,
-
 I had a ton of fun parsing through the layers of testing for this kata! I coded in Ruby and may take some time later this weekend to try out the kata again in Python and perhaps javascript.
 To run this simply clone the repo and then run `rspec spec` in your terminal to see an output of all the passing tests. 
 
